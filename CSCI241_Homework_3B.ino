@@ -45,6 +45,78 @@ void loop()
   displaySeven(holdTime);
   displayEight(holdTime);
   displayNine(holdTime);
+
+  displayA(holdTime);
+  displayB(holdTime);
+  displayC(holdTime);
+  displayD(holdTime);
+  displayE(holdTime);
+  displayF(holdTime);
+}
+
+// Display the letter "A"
+void displayA(int holdTime)
+{
+  SegmentOn(SegGPin);
+  SegmentOn(SegFPin);
+  SegmentOn(SegEPin);
+  SegmentOn(SegCPin);
+  SegmentOn(SegBPin);
+  SegmentOn(SegAPin);
+  holdPattern(holdTime);
+}
+
+// Display the letter "B"
+void displayB(int holdTime)
+{
+  SegmentOn(SegGPin);
+  SegmentOn(SegFPin);
+  SegmentOn(SegEPin);
+  SegmentOn(SegDPin);
+  SegmentOn(SegCPin);
+  holdPattern(holdTime);
+}
+
+// Display the letter "C"
+void displayC(int holdTime)
+{
+  SegmentOn(SegFPin);
+  SegmentOn(SegEPin);
+  SegmentOn(SegDPin);
+  SegmentOn(SegAPin);
+  holdPattern(holdTime);
+}
+
+// Display the letter "D"
+void displayD(int holdTime)
+{
+  SegmentOn(SegGPin);
+  SegmentOn(SegEPin);
+  SegmentOn(SegDPin);
+  SegmentOn(SegCPin);
+  SegmentOn(SegBPin);
+  holdPattern(holdTime);
+}
+
+// Display the letter "E"
+void displayE(int holdTime)
+{
+  SegmentOn(SegGPin);
+  SegmentOn(SegFPin);
+  SegmentOn(SegEPin);
+  SegmentOn(SegDPin);
+  SegmentOn(SegAPin);
+  holdPattern(holdTime);
+}
+
+// Display the letter "F"
+void displayF(int holdTime)
+{
+  SegmentOn(SegGPin);
+  SegmentOn(SegFPin);
+  SegmentOn(SegEPin);
+  SegmentOn(SegAPin);
+  holdPattern(holdTime);
 }
 
 // Display the digit "0"
