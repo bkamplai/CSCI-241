@@ -1,4 +1,4 @@
-;Author: (Put your name here)
+;Author: Brandon Kamplain
 ;Description: ATMega2560 AVR assembly language "Test_ABS" program.
 
 #define __SFR_OFFSET 0
@@ -41,7 +41,11 @@ Test_ABS:
 
 ;********************* Start of Your Code ***********************
 
- 
+loop:
+  neg r24     ;Take the 2's compliment of low order 16 bit number
+  com r25     ;Take the 1's compliment of high order 16 bit number
+  tst r25     ;Test r25 to see if its zero or minus
+  brlt loop   ;If negative, loop back on itself
 
 ;********************** End of Your Code ************************
 
